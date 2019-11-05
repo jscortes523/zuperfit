@@ -1,0 +1,79 @@
+.login{
+    min-height: calc(100vh - 200px);
+    padding: 20px 0;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login__logo img{
+    width: 100%;
+    margin: 0;
+}
+.login__description{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: grey;
+    text-align: center;
+    margin: 5px;
+}
+.login__image{
+    width: 100%;
+    margin-top: 0;
+}
+.login__image img{
+    width: 100%;
+    border-radius: 40px;
+}
+.login__title{
+    margin: 5px;
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.login__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login__form input{
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 2px solid yellowgreen;
+    outline: none;
+    width: 300px;
+    height: 50px; 
+    margin: 5px;
+    text-align: center;
+}
+.login__signIn{
+    color: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+.login__signIn a{
+    color: grey;
+    font-size: 12px;
+    font-weight: bold;
+}
+.button{
+    border: none;
+    background-color: yellowgreen;
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    margin: 15px 0;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+}

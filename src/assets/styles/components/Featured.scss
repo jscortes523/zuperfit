@@ -1,0 +1,86 @@
+.featured{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.featured__recipe{
+    width: 45%;
+    height: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+.featured__recipe--image{
+    width: 50%;
+    height: 50%;
+}
+.featured__recipe a{
+    color:lightslategrey;
+    text-decoration: none;
+}
+.featured__recipe a:hover{
+    color: greenyellow;
+}
+.featured__recipe--image{
+    width: 100%;
+    border-radius: 50px;
+    margin-top: 5px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(202,203,209,1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(202,203,209,1);
+    box-shadow: 5px 5px 5px 0px rgba(202,203,209,1);
+}
+.featured__recipe--title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.featured__recipe span{
+    color: gray;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.featured__recipe--description{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}
+// Sidemenu
+.featured__options{
+    width: 45%;
+    height: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+.featured__options--list{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: stretch;
+}
+.featured__options--list a{
+    text-decoration: none;
+    color: lightslategrey;
+    border: 2px solid yellowgreen;
+    border-radius: 25px;
+    margin: 10% 0;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.featured__options--list a:hover{
+    color: white;
+    font-weight: bold;
+    background-color: yellowgreen;
+}
+.list__item{
+    list-style: none;
+}
