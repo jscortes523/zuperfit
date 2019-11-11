@@ -1,9 +1,13 @@
 .navbar{
-    display: flex;
+    display: none;
     border-top: 1px solid #ccc;
     justify-content: space-around;
     padding: 20px;
     background-color: whitesmoke;
+}
+.navbar__image{
+    width: 40px;
+    height: 40px;
 }
 .navbar__copyright{
     background-color:yellowgreen;
@@ -15,4 +19,9 @@
 }
 .navbar__copyright__title{
     margin: 0;
+}
+@media screen and (max-width: 600px){
+    .navbar{
+        display: flex;
+    }
 }

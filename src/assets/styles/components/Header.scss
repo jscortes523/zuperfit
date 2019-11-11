@@ -11,10 +11,17 @@
 .header_profile{
     display: flex;
     align-items: center;
-    width: 70px;
+    justify-content: flex-end;
+    width: 100px;
     height: 70px;
 }
-.header_profile img{
+.header_profile a img{
     width: 40px;
     height: 40px;
+    padding: 5px;
+}
+@media screen and (max-width: 600px){
+    .header_profile--cart{
+        display: none
+    }
 }

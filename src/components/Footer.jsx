@@ -8,13 +8,13 @@ const Footer = () => (
     <footer className="footer">
         <div className="navbar">
             <div className="navbar__favorites">
-                <a href="#"><img className="navbar__favorites--image" src={favorites} alt="favoritos"/></a>
+                <a href="#"><img className="navbar__image" src={favorites} alt="favoritos"/></a>
             </div>
             <div className="navbar__calendar">
-                <a href="#"><img src={calendar} alt="calendario" s="navbar__calendar--image"/></a>
+                <a href="#"><img src={calendar} alt="calendario" className="navbar__image"/></a>
             </div>
             <div className="cart">
-                <a href="#"><img src={cart} alt="carrito" s="navbar__cart--image"/></a>
+                <a href="#"><img src={cart} alt="carrito" className="navbar__image"/></a>
             </div>
         </div>
         <div className="navbar__copyright">
