@@ -1,0 +1,9 @@
+.container__items{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-row-gap: 5%;
+    grid-auto-rows: 270px;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-around;
+}
