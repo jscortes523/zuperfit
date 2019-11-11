@@ -11,10 +11,10 @@ const Header = () => (
         </div>
         <div className="header_profile">
             <div className="header_profile--cart">
-                <a href="#" clasName="header_profile--option"><img src={cart} alt=""/></a>
+                <a href="#" className="header_profile--option"><img src={cart} alt=""/></a>
             </div>
             <div className="header_profile--user">
-                <a href="#" clasName="header_profile--option"><img src={userIcon} alt=""/></a>
+                <a href="#" className="header_profile--option"><img src={userIcon} alt=""/></a>
             </div>
         </div>
     </header>
