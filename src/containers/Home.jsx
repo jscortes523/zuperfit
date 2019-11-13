@@ -6,24 +6,23 @@ import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Featured from '../components/Featured';
 import Summary from '../components/Summary'
+import useInitialState from '../hooks/useInitialState';
 
-
+const API = 'http://localhost:3000/initialState';
 const Home = () => {
-    const [recipes, setRecipes] = useState([]);
-    useEffect (() => {
-        fetch('http://localhost:3000/initialState')
-        .then(response => response.json())
-        .then(data => setRecipes(data))
-    }, []);
-    console.log(recipes)
-    return (
+    const initialState = useInitialState(API);
+    return initialState.length === 0 ? <h1>Loading...</h1> : (
         <div className="Home">
             <Header />
             <Search />
             <Categories />
-            <Featured />
+            {initialState.recipes.map(recipe =>
+            <Featured {...recipe}/>
+             )}
             <Footer />
+           
         </div>
+        
     );
 };
 

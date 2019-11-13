@@ -7,6 +7,7 @@ import FavoritesContainer from '../components/FavoritesContainer';
 import '../assets/styles/containers/Favorites.scss'
 
 const Favorites = () => (
+    
     <div >
         <Header/>
         <FavoritesContainer>
