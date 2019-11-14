@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/styles/containers/Register.scss';
 import logo from '../assets/static/logo.png';
 import loginImage from '../assets/static/loginImage.jpg'
@@ -6,7 +7,7 @@ import loginImage from '../assets/static/loginImage.jpg'
 const Register = () => (
     <section className="register">
         <figure className="register__logo">
-            <a href="/"><img src={logo} alt="ZuperFit"/></a>
+            <Link to="/"><img src={logo} alt="ZuperFit"/></Link>
         </figure>
         <figure className="register__image">
             <img src={loginImage} alt="Registro ZuperFit"/>
@@ -23,7 +24,7 @@ const Register = () => (
             </form>
             <div className="register__signIn">
                 <span>Ya tengo una cuenta</span>
-                <a href="/login">Iniciar sesión</a>
+                <Link to="/login">Iniciar sesión</Link>
             </div>  
         </section>
 );

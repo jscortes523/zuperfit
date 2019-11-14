@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/styles/containers/Login.scss';
 import logo from '../assets/static/logo.png';
 import loginImage from '../assets/static/loginImage.jpg';
@@ -6,7 +7,7 @@ import loginImage from '../assets/static/loginImage.jpg';
 const Login = () => (
     <section className="login">
             <figure className="login__logo">
-                <a href="/"><img src={logo} alt="ZuperFit"/></a>
+                <Link to="/"><img src={logo} alt="ZuperFit"/></Link>
             </figure>
             <div className="login__description">
                 <p>Tu eliges qué quieres cocinar y nosotros nos encargamos de llevarte todo lo que necesitas a la puerta de tu casa.</p>
@@ -23,7 +24,7 @@ const Login = () => (
             <div className="login__signIn">
                 <span>No tengo una cuenta</span>
                 <br></br>
-                <a href="/login">Registrarme</a>
+                <Link to="/register">Registrarme</Link>
             </div>
     </section>
 );
