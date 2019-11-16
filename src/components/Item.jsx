@@ -8,14 +8,13 @@ import clock from '../assets/static/time.png';
 import cart from '../assets/static/cart.png';
 import removeIcon from '../assets/static/minus.png';
 import favoritesIcon from '../assets/static/favorites.png';
-// import featured from '../assets/static/loginImage.jpg';
 import '../assets/styles/components/Item.scss';
 
 const Item = (props) => {
-    const {title, images, price, prepTime, description, id} = props;
+    const {title, images, price, prepTime, description, id, isList} = props;
     const handleSetFavorite = () =>{
         props.setFavorite({
-            id, title, images, price, prepTime, description
+            id, title, images, price, prepTime, description, isList
         })
     }
     const handleDeleteFavorite = (itemId) =>{
@@ -36,18 +35,19 @@ const Item = (props) => {
                     <img src={clock}/><span className="featured-item__details--resume_span">{prepTime}</span>
                 </div>
                 <div className="featured-item__details--buttons">
-                    <img 
-                        className="featured-item__details--buttons--img" 
-                        src={favoritesIcon} 
-                        alt="Guardar en favoritos"
-                        onClick={handleSetFavorite} 
-                    />
-                    <img 
+                    {isList === true ? <img 
                         className="featured-item__details--buttons--img" 
                         src={removeIcon} 
                         alt="Eliminar de favoritos"
                         onClick={() => handleDeleteFavorite(id)} 
-                    />
+                    /> : <img 
+                    className="featured-item__details--buttons--img" 
+                    src={favoritesIcon} 
+                    alt="Guardar en favoritos"
+                    onClick={handleSetFavorite} 
+                />}
+                    
+                    
                     <img className="featured-item__details--buttons--img" src={cart} alt="Comprar" />
                 </div>
             </div>

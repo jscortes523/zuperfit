@@ -1,26 +1,30 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import '../assets/styles/Home.scss';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Featured from '../components/Featured';
+import Item from '../components/Item';
 // import Summary from '../components/Summary'
+function getRandomId(recipesIds) {
+    let max = Math.max(...recipesIds) 
+    let min = Math.min(...recipesIds)
+    return Math.floor(Math.random() * (max - min)) + min;
+}
 
-// const API = 'http://localhost:3000/initialState';
 const Home = ({recipes}) => {
-    // const initialState = useInitialState(API);
-    // return initialState.length === 0 ? <h1>Loading...</h1> : (
+    let keys = []
+    recipes.desayuno.map((recipe) => {
+        keys.push(recipe.id)
+    })
+    const randomId = getRandomId(keys)
         return (
         <div className="Home">
-            <Header />
             <Search />
             <Categories />
-            {recipes.map(recipe =>
-            <Featured key={recipe.id}{...recipe}/>
-             )}
-            <Footer />
+            <Featured>
+                {<Item key={recipes.desayuno[randomId]}{...recipes.desayuno[randomId]} isLists= {true}/>}
+            </Featured>
            
         </div>
         

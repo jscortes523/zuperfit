@@ -20,6 +20,7 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 12px;
+    margin-top: 0;
 }
 .featured__item--featured__image{
     width: 100%;
@@ -62,10 +63,16 @@
     width: 20px;
     height: 20px;
     margin-left:10px;
+    cursor: pointer;
+}
+.featured-item__details--buttons--img:hover{
+    width: 22px;
+    height: 22px;
 }
 .featured__item--description--text{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-transform: uppercase;
+    font-style: italic;
     text-align: left;
-    font-size: 12px;
+    font-size: 13px;
+    margin-bottom: 0;
 }

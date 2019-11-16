@@ -5,10 +5,12 @@ import Login from '../containers/Login';
 import Register from '../containers/Register';
 import NotFound from '../containers/NotFound';
 import Favorites from '../containers/Favorites';
+import Layout from '../containers/Layout';
 
 
 const App = () => (
     <BrowserRouter>
+        <Layout>
         <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/login" component={Login}/>
@@ -16,6 +18,7 @@ const App = () => (
             <Route exact path="/favorites" component={Favorites}/>
             <Route component={NotFound}/>
         </Switch>
+        </Layout>
     </BrowserRouter>
 );
 
