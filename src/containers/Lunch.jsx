@@ -6,7 +6,7 @@ import Item from '../components/Item';
 import '../assets/styles/containers/Favorites.scss'
 
 function recipes (){
-    fetch('https://zuperfit-api.herokuapp.com/api/recipe/query/bycategory/almuerzo')
+    fetch(`${process.env.REACT_APP_API_URL}/recipe/query/bycategory/almuerzo`)
     .then(response=> response.json())
     .then(data => { console.log(data)}) 
  }
