@@ -19,7 +19,7 @@ const Home = ({recipes}) => {
     const [recipe, setRecipe] = useState([])
 
     useEffect(()=>{
-        const url = `http://localhost:9090/api/recipe/daily`
+        const url = `https://zuperfit-api.herokuapp.com/api/recipe/daily`
         axios.get(url).then( res => setRecipe(res.data))        
     },[])
 
